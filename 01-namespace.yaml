@@ -4,4 +4,4 @@ metadata:
   name: roboshop
   labels:
     environment: Dev
-    project: robo
+    project: roboshop
