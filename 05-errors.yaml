@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: errorhandling
+spec:
+  containers:
+  - name: nginx
+    image: dzkjfsdkjf #ImagePullBackOff Error as invalid image or unavailable K8s Can't pull the image.
+  - name: almalinux
+    image: almalinux:9 # The image gets pulled, but the container exits because there is no long-running foreground process.
