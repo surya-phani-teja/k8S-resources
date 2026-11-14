@@ -6,7 +6,7 @@ spec:
   containers:
   - name: nginx
     image: nginx
-    resource:
+    resources:
       requests:
         memory: "68Mi"
         cpu: "100m"
