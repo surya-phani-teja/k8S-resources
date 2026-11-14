@@ -10,4 +10,4 @@ spec:
   ports: 
     - protocal: TCP
       port: 80
-      targetport : 80
+      targetport: 80
