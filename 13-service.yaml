@@ -8,6 +8,6 @@ spec:
     component: frontned #maintain the same label for pod
     environment: dev
   ports: 
-    - protocal: TCP
+    - protocol: TCP
       port: 80
       targetPort: 80
