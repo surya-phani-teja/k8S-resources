@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+spec:
+  selector: # the below mentioned as labels in newly created pod.yaml as it will connect to this SVC 
+    project: roboshop #provide more labels so that it will not interpert the other SVC 
+    component: frontned #maintain the same label for pod
+    environment: dev
+  ports: 
+    - protocal: TCP
+      port: 80
+      targetport : 80
